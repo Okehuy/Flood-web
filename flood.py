@@ -7,7 +7,7 @@ import random
 import threading
 
 ip = str(input('[+] Target: '))
-     port = int(input('[+] Ports: '))
+     port = int(input('[+] Port: '))
             packet = int(input('[+] Packet/s: '))
                      thread = int(input('[+] Threads: '))
 
